@@ -23,7 +23,8 @@ main{
 
 .banner{
     display: flex;
-    max-width: 100vw;
+    min-width: 100vw;
+    position: relative;
 }
 
 .header{
@@ -31,7 +32,7 @@ main{
     width: 100%;
     display: flex;
     justify-content: center;
-    margin-top: 50px;
+    top: 50px;
 }
 
 .container-menu{
@@ -97,11 +98,12 @@ ul{
 .body-container{
     display: flex;
     flex-direction: column;
-    padding: 150px;
+    padding: 160px;
+    width: 100%;
 }
 
 .image{
-    flex: 1;
+    position: relative;
 }
 
 .img-body{
@@ -111,22 +113,98 @@ ul{
 }
 
 .text-container{
-    flex: 1;
-    background-color: crimson;
-    margin-left: -20px;
-    margin-bottom: 50px;
+    position: absolute;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    background-color: white;
+    right: 25px;
+    bottom: 0px;
+    width: 47%;
+    height: 65%;
+}
+
+.white-box{
+   
+}
+
+.title-txt{
+    font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 36pt;
+    margin-bottom: 22px;
+}
+
+.text-content{
+    font-family: "Alata", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: hsl(0, 0%, 55%);
+    font-size: 11pt;
+    line-height: 25px;
 }
 
 .creation-container{
     display: flex;
     align-items: center;
     width: 100%;
+    flex-direction: column;
+    margin-top: 180px;
+    gap: 30px;
+}
+
+.creation{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+.font-creations{
+    font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 36pt;  
+}
+
+.see-btn{
+    font-family: "Alata", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 5px;
+    width: 160px;
+    height: 40px;
+    border: 2px solid hsl(0, 0%, 41%);
+    border-radius: 3px;
+    background-color: transparent;
 }
 
 .up{
     display: flex;
     width: 100%;
     justify-content: space-between;
+}
+
+.down{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+footer{
+    width: 100%;
+    height: 22%;
+    background-color: black;
+}
+
+.loopfooter{
+    background-color: black;
+    width: 100%;
+
 }
 
 @media only screen and (min-width:750px){
